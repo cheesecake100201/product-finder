@@ -11,7 +11,7 @@ const InputIdea = () => {
     const fetchData = async () => {
       if (debouncedInput) {
         try {
-          const response = await fetch("https://projectidea-fskx.onrender.com/categoryImage", {
+          const response = await fetch("https://product-finder-backend.onrender.com/categoryImage", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -46,7 +46,7 @@ const InputIdea = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://projectidea-fskx.onrender.com/productList", {
+      const response = await fetch("https://product-finder-backend.onrender.com/productList", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
